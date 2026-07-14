@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Download, Menu, X } from "lucide-react";
+import resumePdf from "../../Sush resume.pdf";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,7 +72,7 @@ const Navigation = () => {
               onClick={() => scrollToSection("hero")}
               className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
             >
-              Portfolio
+              Sushruth M S
             </button>
 
             {/* Desktop Navigation - Animated Pills */}
@@ -92,11 +93,14 @@ const Navigation = () => {
                 ))}
               </div>
               <Button
+                asChild
                 size="sm"
                 className="ml-4 bg-primary hover:bg-primary/90 glow-cyan"
               >
-                <Download className="mr-2 h-4 w-4" />
-                Resume
+                <a href={resumePdf} download="Sushruth-MS-Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </a>
               </Button>
             </div>
 
@@ -131,9 +135,11 @@ const Navigation = () => {
                   {section.label}
                 </button>
               ))}
-              <Button className="w-full mt-4 bg-primary hover:bg-primary/90 glow-cyan">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
+              <Button asChild className="w-full mt-4 bg-primary hover:bg-primary/90 glow-cyan">
+                <a href={resumePdf} download="Sushruth-MS-Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>
