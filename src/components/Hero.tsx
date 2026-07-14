@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Download, ArrowDown } from "lucide-react";
+import resumePdf from "../../Sush resume.pdf";
 
 const roles = [
   "AI/ML Engineer",
@@ -100,12 +101,15 @@ const Hero = () => {
               Collaborate
             </Button>
             <Button 
+              asChild
               size="lg" 
               variant="outline"
               className="border-secondary/50 text-secondary hover:bg-secondary/10 transition-smooth"
             >
-              <Download className="mr-2 h-4 w-4" />
-              Resume
+              <a href={resumePdf} download="Sushruth-MS-Resume.pdf">
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </a>
             </Button>
           </div>
         </div>

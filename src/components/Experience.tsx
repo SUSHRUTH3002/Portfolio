@@ -4,26 +4,14 @@ const Experience = () => {
   const workExperience = [
     {
       icon: Briefcase,
-      title: "Senior AI/ML Engineer",
-      company: "Tech Company",
-      period: "2023 - Present",
+      title: "Data Scientist",
+      company: "Manifest IT",
+      period: "November 2024 - Present",
       description: "Leading AI initiatives and developing scalable machine learning solutions.",
       achievements: [
         "Developed neural network models achieving 95% accuracy",
         "Optimized model performance reducing inference time by 40%",
         "Led team of 5 engineers on ML pipeline architecture"
-      ]
-    },
-    {
-      icon: Briefcase,
-      title: "Data Scientist",
-      company: "Analytics Firm",
-      period: "2021 - 2023",
-      description: "Built predictive models and data pipelines for business intelligence.",
-      achievements: [
-        "Implemented recommendation system serving 1M+ users",
-        "Created ETL pipelines processing 10TB+ data daily",
-        "Improved model accuracy by 25% through feature engineering"
       ]
     },
   ];
@@ -36,25 +24,9 @@ const Experience = () => {
       period: "2021 - 2025",
       specialization: "Artificial Intelligence & Machine Learning",
       achievements: [
-        "Research focus: Deep Learning for Natural Language Processing",
-        "Published 3 papers in top-tier AI conferences",
-        "GPA: 3.9/4.0 - Dean's List all semesters",
-        "Teaching Assistant for Machine Learning course"
+        "CGPA: 9.49/10",
       ]
-    },
-    {
-      icon: GraduationCap,
-      degree: "Bachelor's in Computer Engineering",
-      institution: "MIT",
-      period: "2015 - 2019",
-      specialization: "Data Science & Analytics",
-      achievements: [
-        "Graduated with Honors - Top 5% of class",
-        "Senior Thesis: Neural Architecture Search for Computer Vision",
-        "President of AI/ML Student Club",
-        "Won 3 hackathons focused on AI solutions"
-      ]
-    },
+    }
   ];
 
   return (
@@ -125,7 +97,7 @@ const Experience = () => {
           <div className="card-glass p-8 rounded-xl mb-12">
             <div className="flex items-center gap-3 mb-8">
               <GraduationCap className="w-8 h-8 text-accent" />
-              <h3 className="text-3xl font-bold">Education & Certifications</h3>
+              <h3 className="text-3xl font-bold">Education</h3>
             </div>
 
             <div className="relative">
