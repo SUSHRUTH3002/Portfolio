@@ -79,7 +79,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Crafting intelligent solutions through machine learning, data science, 
-            and innovative applications. Transforming complex problems into elegant code.
+            and innovative applications. Transforming complex problems into elegant code with a strong emphasis on quality, usability, and real-world impact.
           </p>
 
           {/* CTA Buttons */}
